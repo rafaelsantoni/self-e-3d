@@ -1,0 +1,337 @@
+<script>
+var needPadding = 0;
+
+function selfEItemQty(v, target){
+    var value = parseInt(document.getElementById(target).innerHTML);
+	value+=v;
+	if (value > 0){
+    	document.getElementById(target).innerHTML = value;
+	}
+}
+</script>
+<!-- start home code -->
+    <div class="socialMediaContainer container-fluid"><!-- Full width background image here No BS class -->
+            <div class="container-fluid centerContainer">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 socialHeader">
+                    <img class="img-responsive" src="http://www.selfe.com/assets/its-time-to-evolve-yourself-792x257.png" ><!-- CENTER FRAME IMAGE "EVOLVE YOURSELF" -->
+                    </div>
+                </div><!-- END ROW -->
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 socialIcons"></div> <!-- SOCIAL MEDIA ICONS -->
+                    <span class="col-xs-2 col-sm-2 icons"><a href="#"><img src="http://www.selfe.com/assets/white-facebook-icon-65x65.png" class="img-responsive"></a></span>
+                    <span class="col-xs-2 col-sm-2 icons"><a href="#"><img src="http://www.selfe.com/assets/white-instagram-icon-65x65.png" class="img-responsive"></a></span>
+                    <span class="col-xs-2 col-sm-2 icons"><a href="#"><img src="http://www.selfe.com/assets/white-pinterest-icon-65x65.png" class="img-responsive"></a></span>
+                    <span class="col-xs-2 col-sm-2 icons"><a href="#"><img src="http://www.selfe.com/assets/white-twitter-icon-65x65.png" class="img-responsive"></a></span>
+                    <div class="col-xs-2 col-sm-2 socialIcons"></div>	
+                </div><!-- END ROW -->
+            </div><!-- END SOCIAL CONTAINER FLUID WITH LOGO AND ICONS  -->
+    </div><!-- END SOCIAL MEDIA CONTAINER -->
+    
+
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="fam">
+                <img src="http://www.selfe.com/assets/Selfe-Family-06-04-15-5300x2332.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    
+    <div class="lifestyleContainer">	
+    </div> <!-- END LIFESTYLE CONTAINER -->
+
+
+
+	<div class="container-fluid shoppingContainer centerContainer">
+		<div class="row">
+			<div class="col-sm-6"><!-- HERE STARTS WOMENS ULTRA-VITAMIN -->
+				<div class="col-sm-6"><!--  WOMENS ULTRA-VITAMIN IMAGE -->
+					<img src="http://www.selfe.com/assets/Selfe-Womens-Ultra-Vitamins-300.png" class="img-responsive visible-sm visible-md visible-lg">
+				</div>
+				<div class="col-sm-6">
+					<img src="http://www.selfe.com/assets/Selfe-Womens-Ultra-Vitamins-768.png" class="img-responsive visible-xs">
+				</div>				
+				<div class="col-sm-6"> <!-- WOMENS ULTRA-VITAMIN INFORMATION -->
+					<div class="row">
+						<div class="col-sm-12 itemTittle text-center visible-sm visible-md visible-lg"><span><h3>Women's </br>Ultra-Vitamin</h3></span></div>
+						<div class="col-sm-12 itemTittle text-center visible-xs"><span><h2>Women's Ultra-Vitamin</h2></span></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 visible-xs visible-md visible-lg text-center">
+							<h4>All the essential Vitamins and Minerals in one serving.</h4>
+						</div>
+					</div>	
+				<div class="row">
+					<div class="col-md-12 centerContent productDetails">
+						<!-- Womens Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#womensModal">
+						  Supplement Facts
+						</button>
+						<!-- Womens Modal -->
+						<div class="modal fade" id="womensModal" tabindex="-1" role="dialog" aria-labelledby="womensModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="womensModalLabel">Women's Ultra Vitamin Supplement Facts</h4>
+						      </div>
+						      <div class="modal-body">
+						      	<div class="row">
+						      		<div class="col-xm-2 col-sm-1"></div>
+						      		<div class="col-xm-8  col-sm-10">
+								        <img src="http://www.selfe.com/assets/Selfe-Womens-Ultra-Vitamin-Supplement-Facts-470-width.jpg" class="img-responsive text-center">
+								    	<h4>Other Ingredients: Leucine , Brown Rice Flour, Vegetarian Capsule (Hypromellose - HPMC)</h4>
+								    	<p class="finePrint">Directions:  As a dietary supplement, take 3 capsules daily, with food.  Not formulated for children. Do not exceed recommended use.NOT FOR USE BY CHILDREN UNDER THE AGE OF 18.  KEEP BOTTLE TIGHTLY CLOSED AND OUT OF REACH OF CHILDREN. Store in a cool, dry place. Do not use if seal under cap has been broken.</br>
+								    	Warning:  Women who are pregnant or lactating and anyone taking medications or other dietary supplements should consult a health care professional before using any nutritional product.  If any adverse reactions occur, discontinue use and consult a health care professional.  â€  These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+								    </div>
+								  	<div class="col-xm-2 col-sm-1"></div>
+								</div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div><!-- End Womens Modal -->		
+					</div>				
+				</div><!-- End Womens Modal ROW-->
+					<div class="row">
+						<div class="col-sm-12 itemEcom">
+							<div class="col-xs-12 qty">
+								<div class="col-xs-4 col-sm-4 reduceBut" ><img onClick="selfEItemQty(-1, 'item12qty');" src="http://www.selfe.com/assets/selfe-Qty-minus-sign.jpg" alt=""></div>
+								<div class="col-xs-4 col-sm-4 qtyValue" id="item12qty">1</div>
+								<div class="col-xs-4 col-sm-4 pull-right addBut"><img onClick="selfEItemQty(1, 'item12qty');" src="http://www.selfe.com/assets/selfe-Qty-plus-sign.jpg" alt=""></div>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+                        <button type="button" class="addToCart" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&qty-0=' + document.getElementById('item12qty').innerHTML + '&amp;item_id=12'" class="btn" />ADD TO CART</button></div>
+					</div>
+				</div><!-- WOMENS ULTRA-VITAMIN INFORMATION -->
+			</div><!-- END WOMENS ULTRA-VITAMIN COL 6  -->
+			<div class="col-sm-6"><!-- HERE STARTS mens ULTRA-VITAMIN -->
+				<div class="col-sm-6"><!--  mens ULTRA-VITAMIN IMAGE -->
+					<img src="http://www.selfe.com/assets/Selfe-Mens-Ultra-Vitamins-300.png" class="img-responsive visible-sm visible-md visible-lg">
+				</div>
+				<div class="col-sm-6">
+					<img src="http://www.selfe.com/assets/Selfe-Mens-Ultra-Vitamins-768.png" class="img-responsive visible-xs">
+				</div>				
+				<div class="col-sm-6"> <!-- mens ULTRA-VITAMIN INFORMATION -->
+					<div class="row">
+						<div class="col-sm-12 itemTittle text-center visible-sm visible-md visible-lg"><span><h3>Men's </br>Ultra-Vitamin</h3></span></div>
+						<div class="col-sm-12 itemTittle text-center visible-xs"><span><h2>Men's Ultra-Vitamin</h2></span></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 visible-xs visible-md visible-lg text-center">
+							<h4>All the essential Vitamins and Minerals in one serving.</h4>
+						</div>
+					</div>	
+				<div class="row">
+					<div class="col-md-12 centerContent productDetails">
+						<!-- mens Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#mensModal">
+						  Supplement Facts
+						</button>
+						<!-- mens Modal -->
+						<div class="modal fade" id="mensModal" tabindex="-1" role="dialog" aria-labelledby="mensModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="mensModalLabel">Men's Ultra Vitamin Supplement Facts</h4>
+						      </div>
+						      <div class="modal-body">
+						      	<div class="row">
+						      		<div class="col-xm-2 col-sm-1"></div>
+						      		<div class="col-xm-8  col-sm-10">
+								        <img src="http://www.selfe.com/assets/Selfe-Mens-Ultra-Vitamin-Supplement-Facts-470-width.jpg" class="img-responsive text-center">
+								    	<h4>Other Ingredients: Leucine , Brown Rice Flour, Vegetarian Capsule (Hypromellose - HPMC)</h4>
+						    			<p class="finePrint">Directions:  As a dietary supplement, take 3 capsules daily, with food.  Not formulated for children. Do not exceed recommended use. NOT FOR USE BY CHILDREN UNDER THE AGE OF 18.  KEEP BOTTLE TIGHTLY CLOSED AND OUT OF REACH OF CHILDREN. Store in a cool, dry place. Do not use if seal under cap has been broken.</br>
+						    			Warning:  Anyone taking medications or other dietary supplements should consult a health care professional before using any nutritional product.  If any adverse reactions occur, discontinue use and consult a health care professional.  â€  These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+								    </div>
+								  	<div class="col-xm-2 col-sm-1"></div>
+								</div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div><!-- End mens Modal -->		
+					</div>				
+				</div><!-- End mens Modal ROW-->						
+					<div class="row">
+						<div class="col-sm-12 itemEcom">
+							<div class="col-xs-12 qty">
+								<div class="col-xs-4 col-sm-4 reduceBut" ><img onClick="selfEItemQty(-1, 'item13qty');" src="http://www.selfe.com/assets/selfe-Qty-minus-sign.jpg" alt=""></div>
+								<div class="col-xs-4 col-sm-4 qtyValue" id="item13qty">1</div>
+								<div class="col-xs-4 col-sm-4 pull-right addBut"><img onClick="selfEItemQty(1, 'item13qty');" src="http://www.selfe.com/assets/selfe-Qty-plus-sign.jpg" alt=""></div>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+                        <button type="button" class="addToCart" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&qty-0=' + document.getElementById('item13qty').innerHTML + '&amp;item_id=13'" class="btn" />ADD TO CART</button></div>
+					</div>
+				</div><!-- mens ULTRA-VITAMIN INFORMATION -->
+			</div><!-- END mens ULTRA-VITAMIN --><!-- END mens ULTRA-VITAMIN ROW -->
+		</div><!-- END VITAMIN ROW -->
+<div class="row">
+			<div class="col-sm-6"><!-- STARTS dim -->
+				<div class="col-sm-6"><!--  dim  IMAGE -->
+					<img src="http://www.selfe.com/assets/Selfe-DIM-300.png" class="img-responsive visible-sm visible-md visible-lg">
+				</div>
+				<div class="col-sm-6">
+					<img src="http://www.selfe.com/assets/Selfe-DIM-768.png" class="img-responsive visible-xs">
+				</div>				
+				<div class="col-sm-6"> <!-- dim ULTRA-VITAMIN INFORMATION -->
+					<div class="row">
+						<div class="col-sm-12 itemTittle text-center visible-sm visible-md visible-lg"><span><h3>DIM</h3></span></div>
+						<div class="col-sm-12 itemTittle text-center visible-xs"><span><h2>DIM</h2></span></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 visible-xs visible-md visible-lg text-center">
+							<h4>â€ Supports Healthy Hormone Levels</h4>
+						</div>
+					</div>	
+				<div class="row">
+					<div class="col-md-12 centerContent productDetails">
+						<!-- dim Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#dimModal">
+						  Supplement Facts
+						</button>
+						<!-- DIM Modal -->
+						<div class="modal fade" id="dimModal" tabindex="-1" role="dialog" aria-labelledby="dimsModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="dimsModalLabel">DIM Supplement Facts</h4>
+						      </div>
+						      <div class="modal-body">
+						      	<div class="row">
+						      		<div class="col-xm-2 col-sm-1"></div>
+						      		<div class="col-xm-8  col-sm-10">
+								        <img src="http://www.selfe.com/assets/Selfe-DIM-Supplement-Facts-470-width-.jpg" class="img-responsive text-center">
+										<h4>Other Ingredients: Leucine , Brown Rice Flour, Vegetarian Capsule (Hypromellose - HPMC)</h4>
+								    	<p class="finePrint">Directions:  As a dietary supplement, take one (1) capsule daily, or as directed by a healthcare professional. NOT FOR USE BY CHILDREN UNDER THE AGE OF 18.  KEEP BOTTLE TIGHTLY CLOSED AND OUT OF REACH OF CHILDREN. Store in a cool, dry place. Do not use if seal under cap has been broken.</br>
+								    	Warning:  Women who are pregnant or lactating and anyone taking medications or other dietary supplements should consult a health care professional before using any nutritional product.  If any adverse reactions occur, discontinue use and consult a health care professional.â€  These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+								    </div>
+								  	<div class="col-xm-2 col-sm-1"></div>
+								</div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div><!-- End DIM Modal -->		
+					</div>				
+				</div><!-- End DIM Modal ROW-->						
+					<div class="row">
+						<div class="col-sm-12 itemEcom">
+							<div class="col-xs-12 qty">
+								<div class="col-xs-4 col-sm-4 reduceBut" ><img onClick="selfEItemQty(-1, 'item14qty');" src="http://www.selfe.com/assets/selfe-Qty-minus-sign.jpg" alt=""></div>
+								<div class="col-xs-4 col-sm-4 qtyValue" id="item14qty">1</div>
+								<div class="col-xs-4 col-sm-4 pull-right addBut"><img onClick="selfEItemQty(1, 'item14qty');" src="http://www.selfe.com/assets/selfe-Qty-plus-sign.jpg" alt=""></div>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+                        <button type="button" class="addToCart" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&qty-0=' + document.getElementById('item14qty').innerHTML + '&amp;item_id=14'" class="btn" />ADD TO CART</button></div>
+					</div>
+				</div><!-- END DIM INFORMATION -->
+			</div><!-- END WOMENS ULTRA-VITAMIN COL 6  -->
+			<div class="col-sm-6"><!-- START HMB -->
+				<div class="col-sm-6"><!--  HMB IMAGE -->
+					<img src="http://www.selfe.com/assets/Selfe-HMB-300.png" class="img-responsive visible-sm visible-md visible-lg">
+				</div>
+				<div class="col-sm-6">
+					<img src="http://www.selfe.com/assets/Selfe-HMB-768.png" class="img-responsive visible-xs">
+				</div>				
+				<div class="col-sm-6"> <!-- hmb  INFORMATION -->
+					<div class="row">
+						<div class="col-sm-12 itemTittle text-center visible-sm visible-md visible-lg"><span><h3>HMB</h3></span></div>
+						<div class="col-sm-12 itemTittle text-center visible-xs"><span><h2>HMB</h2></span></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 visible-xs visible-md visible-lg text-center">
+							<h4>â€  Supports Muscle Endurance</h4>
+						</div>
+					</div>	
+				<div class="row">
+					<div class="col-md-12 centerContent productDetails">
+						<!-- hmb Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#hmbModal">
+						  Supplement Facts
+						</button>
+						<!-- hmb Modal -->
+						<div class="modal fade" id="hmbModal" tabindex="-1" role="dialog" aria-labelledby="hmbModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="hmbModalLabel">HMB Supplement Facts</h4>
+						      </div>
+						      <div class="modal-body">
+						      	<div class="row">
+						      		<div class="col-xm-2 col-sm-1"></div>
+						      		<div class="col-xm-8  col-sm-10">
+								        <img src="http://www.selfe.com/assets/Selfe-HMB-Supplement-Facts-470-width.jpg" class="img-responsive text-center">
+										<h4>Other Ingredients: Leucine , Brown Rice Flour, Vegetarian Capsule (Hypromellose - HPMC)</h4>
+								    	<p class="finePrint">Directions:  For adults, take one (1) capsule four times daily, preferably with meals. Do not exceed recommended dose. Not formulated for children. Do not exceed recommended use.NOT FOR USE BY CHILDREN UNDER THE AGE OF 18.  KEEP BOTTLE TIGHTLY CLOSED AND OUT OF REACH OF CHILDREN. Store in a cool, dry place. Do not use if seal under cap has been broken.</br>
+								    	Warning:  Women who are pregnant or lactating and anyone taking medications or other dietary supplements should consult a health care professional before using any nutritional product.  If any adverse reactions occur, discontinue use and consult a health care professional.â€  These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+								    </div>
+								  	<div class="col-xm-2 col-sm-1"></div>
+								</div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div><!-- End hmb Modal -->		
+					</div>				
+				</div><!-- End hmb Modal ROW-->						
+					<div class="row">
+						<div class="col-sm-12 itemEcom">
+							<div class="col-xs-12 qty">
+								<div class="col-xs-4 col-sm-4 reduceBut" ><img onClick="selfEItemQty(-1, 'item15qty');" src="http://www.selfe.com/assets/selfe-Qty-minus-sign.jpg" alt=""></div>
+								<div class="col-xs-4 col-sm-4 qtyValue" id="item15qty">1</div>
+								<div class="col-xs-4 col-sm-4 pull-right addBut"><img onClick="selfEItemQty(1, 'item15qty');" src="http://www.selfe.com/assets/selfe-Qty-plus-sign.jpg" alt=""></div>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+                        <button type="button" class="addToCart" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&qty-0=' + document.getElementById('item15qty').innerHTML + '&amp;item_id=15'" class="btn" />ADD TO CART</button></div>
+					</div>
+				</div><!-- hmb INFORMATION -->
+			</div><!-- END hmb  --><!-- END hmb  ROW -->
+		</div><!-- END DIM / HMB ROW -->							
+	</div><!-- END SHOPPING CONTAINER -->
+
+
+
+    <div class="lifeStylewithOverlayContainer"><!-- Full width background image here No BS class -->
+        <div class="container-fluid centerContainer">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-5 lifeStylesocialHeader">
+                <img class="img-responsive" src="http://www.selfe.com/assets/evolve-yourself-703x87.png" ><!-- CENTER FRAME IMAGE "EVOLVE YOURSELF" -->
+                </div>
+            </div><!-- END ROW -->
+            <div class="row visible-lg">
+                <div class="col-xs-2 col-sm-2 col-lg-6 lifeStyleSocialIcons"></div> <!-- SOCIAL MEDIA ICONS -->
+                <span class="col-xs-2 col-sm-2 col-lg-1 icons"><a href="#"><img src="http://www.selfe.com/assets/gray-facebook-icon-45x45.png" class="img-responsive"></a></span>
+                <span class="col-xs-2 col-sm-2 col-lg-1 icons"><a href="#"><img src="http://www.selfe.com/assets/gray-instagram-icon-45x45.png" class="img-responsive"></a></span>
+                <span class="col-xs-2 col-sm-2 col-lg-1 icons"><a href="#"><img src="http://www.selfe.com/assets/gray-pinterest-icon-45x45.png" class="img-responsive"></a></span>
+                <span class="col-xs-2 col-sm-2 col-lg-1 icons"><a href="#"><img src="http://www.selfe.com/assets/gray-twitter-icon-45x45.png" class="img-responsive"></a></span>
+                <div class="col-xs-2 col-sm-2 col-lg-2 lifeStyleSocialIcons"></div>	
+            </div><!-- END ROW -->
+        </div><!-- END SOCIAL CONTAINER FLUID WITH LOGO AND ICONS  -->
+    </div><!-- END SOCIAL MEDIA CONTAINER -->
+
+<!-- end home code -->
